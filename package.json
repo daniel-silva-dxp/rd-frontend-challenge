@@ -1,0 +1,19 @@
+{
+	"name": "challange",
+	"version": "1.0.0",
+	"description": "teste técnico para um processo seletivo",
+	"main": "index.js",
+	"scripts": {
+		"test": "echo \"Error: no test specified\" && exit 1"
+	},
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/daniel-silva-dxp/rd-frontend-challenge.git"
+	},
+	"author": "Daniel Silva <dani3l.dxp@gmail.com>",
+	"license": "MIT",
+	"bugs": {
+		"url": "https://github.com/daniel-silva-dxp/rd-frontend-challenge/issues"
+	},
+	"homepage": "https://github.com/daniel-silva-dxp/rd-frontend-challenge#readme"
+}

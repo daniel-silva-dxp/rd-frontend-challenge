@@ -1,0 +1,140 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap");
+* {
+	margin: 0;
+	padding: 0;
+	outline: 0;
+	box-sizing: border-box;
+}
+*:focus {
+	outline: 0;
+}
+html,
+body,
+#app {
+	height: 100%;
+}
+body,
+input,
+button {
+	font: 14px "Roboto", sans-serif;
+}
+a {
+	text-decoration: none;
+}
+ul {
+	list-style: none;
+}
+button {
+	cursor: pointer;
+}
+
+body {
+	-webkit-font-smoothing: antialiased;
+	background: linear-gradient(-45deg, #aaa 25%, #eee 100%);
+	background-attachment: fixed;
+}
+
+/* YOUR CODE HERE */
+#app {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.logo {
+	height: 45px;
+	width: 45px;
+	margin-bottom: 10px;
+}
+
+.login {
+	width: 25rem;
+	background: #e0e0e0;
+	border-top-left-radius: 15px;
+	border-bottom-right-radius: 15px;
+}
+
+@media screen and (max-width: 770px) {
+	.login {
+		width: 40vmax;
+	}
+}
+
+.login form {
+	margin: 8px;
+	display: flex;
+	flex-direction: column;
+}
+
+.login form input {
+	margin: 5px;
+	padding: 8px;
+	border: none;
+	border-radius: 4px;
+	background: #d1d1d1;
+}
+
+.login form button {
+	margin: 5px;
+	padding: 8px;
+	border: none;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	background: #d1d1d1;
+	color: #fff;
+}
+
+.login form button:enabled {
+	background: #178428;
+	transition: opacity 1s;
+}
+
+.login form button:enabled:hover {
+	opacity: 0.75;
+}
+
+.container {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-between;
+
+	width: 40rem;
+}
+
+@media screen and (max-width: 770px) {
+	.container {
+		width: 40vmax;
+		height: 90vmax;
+	}
+}
+
+.container li {
+	display: flex;
+	flex-grow: 1;
+	align-items: center;
+
+	margin: 5px;
+	padding: 5px;
+	background: #ffffff;
+	border-radius: 5px;
+}
+
+.container li:hover img {
+	transform: scale(1.7);
+	filter: grayscale(0);
+	transition: transform .2s ease-out;
+}
+
+.container li img {
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+	filter: grayscale(100%);
+}
+
+.container li span {
+	color: #8c939a;
+	margin: 0 5px;
+}
